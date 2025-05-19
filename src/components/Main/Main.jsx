@@ -8,7 +8,6 @@ const Main = () => {
   
   return (
     <main>
-      Main
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/new" element={<New />} />

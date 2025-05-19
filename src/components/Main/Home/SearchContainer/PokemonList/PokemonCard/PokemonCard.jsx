@@ -10,4 +10,4 @@ const PokemonCard = ({ data }) => {
   </>
   )};
 
-  export default PokemonCard
+  export default PokemonCard;

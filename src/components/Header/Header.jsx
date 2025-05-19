@@ -4,8 +4,7 @@ import Navbar from "./Navbar";
 const Header = () => {
 
   return (
-    <header>
-      <h1>Esto es mi header</h1>
+    <header className="header-container">
       <Navbar />
     </header>
   );

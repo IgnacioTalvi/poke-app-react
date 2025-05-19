@@ -31,9 +31,9 @@ const Search = () => {
   };
 
 
-  return <section className="search-form-section">
+  return <section className="search-form">
           <form onSubmit={handleSubmit}>
-            <input name="pokemon"/>
+            <input name="topic"/>
             <button>Buscar</button>
           </form>
         </section>
