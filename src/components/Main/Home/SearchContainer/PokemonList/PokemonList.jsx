@@ -1,21 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import PokemonCard from "./PokemonCard/PokemonCard.jsx";
 
-const PokemonList = () => {
-  
-  const [pokemon, setPokemon] = useState([]);
-
-  // const inputRef = useRef(""); // esta referencia será un string vacío al principio
+const PokemonList = ({pokemon}) => {
   
   const paintData = () =>
     pokemon.map((item, index) => (
-      <PokemonCard key={index} data={item} />
+      <PokemonCard key={index} pokemon={item} />
     ));
 
   return <section className="pokemon-list-section">
+    
     <h4>Pokemon list</h4>
     {paintData()}
-
+    
 </section>
 };
 

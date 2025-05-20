@@ -1,11 +1,9 @@
 import React from "react";
-import Search from "./SearchContainer/Search/Search";
-import PokemonList from "./SearchContainer/PokemonList";
+import SearchContainer from "./SearchContainer/SearchContainer";
 
 const Home = () => {
   return <div>
-    <Search />
-    <PokemonList />
+    <SearchContainer />
     </div>;
 };
 
