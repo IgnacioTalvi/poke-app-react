@@ -1,0 +1,10 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.pokemon-list-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    
+}

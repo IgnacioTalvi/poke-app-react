@@ -10,7 +10,6 @@ const PokemonList = ({pokemon}) => {
 
   return <section className="pokemon-list-section">
     
-    <h4>Pokemon list</h4>
     {paintData()}
     
 </section>
