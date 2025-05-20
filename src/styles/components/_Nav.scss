@@ -1,0 +1,11 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    max-height: 12vh;
+    min-height: 50px;
+    margin:0px;
+    align-items: center;
+}

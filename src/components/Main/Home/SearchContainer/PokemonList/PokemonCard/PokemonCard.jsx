@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const PokemonCard = ({ pokemon }) => {
   const {sprites, name, height, weight} = pokemon;
   console.log(pokemon);

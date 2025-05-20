@@ -2,11 +2,11 @@
 // Aquí poner todas las hojas de estilos que se
 // van a usar en la app
 
-// @use './views/App.scss';
+@use './views/App.scss';
 @use './components/Header';
 // @use './components/Footer';
 // @use './components/Main';
-// @use './components/Nav';
+@use './components/Nav';
 // @use './components/Contact';
 // @use './components/Staff';
 // @use './components/Card';
