@@ -4,7 +4,7 @@ import axios from "axios";
 const Search = () => {
 
   const [value, setValue] = useState("charizard"); // Para guardar el dato a buscar
-  const [pokemon, setPokemon] = useState([]); // Para guardar los posts
+  const [pokemon, setPokemon] = useState([]); // Para guardar los pokemon
   
   // equivale a un componentDidUpdate()
   useEffect(() => {
