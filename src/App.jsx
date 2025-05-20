@@ -3,9 +3,11 @@ import { BrowserRouter } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import './styles/style.scss';
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+
 
 // Importar el contexto
 import { UserContext } from "./context/UserContext";
