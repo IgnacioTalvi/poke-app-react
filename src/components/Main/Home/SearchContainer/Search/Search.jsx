@@ -15,8 +15,8 @@ const Search = () => {
         const json = res.data;
 
         // Guarda en el array de posts el resultado. Procesa los datos
-        setPokemon(json);
-      }catch(e){
+        setPokemon(json);      
+      } catch(e){
         setPokemon([]) // No pintes nada 
       }
     }
@@ -36,7 +36,7 @@ const Search = () => {
             <input name="topic"/>
             <button>Buscar</button>
           </form>
-        </section>
+       </section>
 };
 
 export default Search;

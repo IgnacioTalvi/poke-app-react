@@ -4,11 +4,10 @@ import Search from "./Search/Search.jsx";
 
 const SearchContainer = () => {
  
-  const [value, setValue] = useState("charizard"); // Para guardar el dato a buscar
+  // const [value, setValue] = useState("charizard"); // Para guardar el dato a buscar
   
   // Estado inicial del array de pokemons
-  const [pokemon, setPokemon] = useState([]); // Para guardar los pokemon
-  
+  // const [pokemon, setPokemon] = useState([]); // Para guardar los pokemon
 
   // // Estado inicial del formulario
   // const [values, setValues] = useState({
@@ -34,7 +33,7 @@ const SearchContainer = () => {
 
   return (
     <section className="search-container-section">
-      <Search />
+      {/* <Search /> */}
       <PokemonList />
     </section>
   );
