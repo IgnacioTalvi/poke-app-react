@@ -1,12 +1,13 @@
-// Fichero de estilos principal
-// Aquí poner todas las hojas de estilos que se
-// van a usar en la app
+@use './utils/variables' as *;
+@use './utils/mixins' as *;
 
-@use './views/App.scss';
-@use './components/Header';
-// @use './components/Footer';
-// @use './components/Main';
+// Componentes
 @use './components/Nav';
-// @use './components/Contact';
-// @use './components/Staff';
-// @use './components/Card';
+@use './components/Header';
+@use './components/Footer';
+@use './components/PokemonCard';
+@use './components/PokemonList';
+@use './components/SearchContainer';
+
+// Vistas
+@use './views/App';
