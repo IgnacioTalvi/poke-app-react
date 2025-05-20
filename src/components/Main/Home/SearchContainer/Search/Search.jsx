@@ -1,27 +1,24 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 
-const Search = () => {
-
-  const [value, setValue] = useState("charizard"); // Para guardar el dato a buscar
-  const [pokemon, setPokemon] = useState([]); // Para guardar los pokemon
+const Search = ({value, setPokemon, setValue}) => {
   
-  // equivale a un componentDidUpdate()
-  useEffect(() => {
-    async function fetchData() {
-      try{
-        // Petición HTTP
-        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`);
-        const json = res.data;
-
-        // Guarda en el array de posts el resultado. Procesa los datos
-        setPokemon(json);      
-      } catch(e){
-        setPokemon([]) // No pintes nada 
-      }
-    }
-    fetchData();
-  }, [value]); // componentDidUpdate
+ useEffect(() => {
+   async function fetchData() {
+     try{
+       // Petición HTTP
+       const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`);
+       const json = res.data;
+ 
+       // Guarda en el array de posts el resultado. Procesa los datos
+       setPokemon(prev => [...prev, json]);    
+     } catch(e){
+       setPokemon(pokemon) 
+     }
+   }
+   fetchData();
+ }, [value]); // componentDidUpdate
+   // const inputRef = useRef(""); // esta referencia será un string vacío al principio
 
 
   const handleSubmit = e => {
